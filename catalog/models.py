@@ -1,14 +1,6 @@
 from django.db import models
 
 #carousel
-class TarjetasVideos(models.Model):
-	id 		=models.IntegerField(primary_key=True)
-	title 	=models.CharField(max_length=200, verbose_name="Titulo")
-	image 	=models.ImageField(verbose_name="Imagen", upload_to= "component")
-	btnUP 	=models.CharField(max_length=200,null=False,verbose_name="Url_boton")
-	imgUp 	=models.CharField(max_length=200,null=False,verbose_name="Url_imagen")
-	created =models.DateTimeField(auto_now_add=True)
-	updated =models.DateTimeField(auto_now=True)
 
 class Driver(models.Model):
 	"""Model representing a DRIVER."""
