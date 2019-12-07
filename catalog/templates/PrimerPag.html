@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+ <head>
+		<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <!-- TITULO DE PAGINA-->
+		<title>Support</title>
+</head>
+
+ 
+<div class="row no-gutters d-flex align-items-center align-items-stretch">
+<div class="col-md-3 d-flex align-items-center py-4">
+{% load static %}
+		<img src="{% static "img/logomb.png" %}" width="200" height="75">
+</div>
+<body>
+
+<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+		<!-- TITULO -->
+		<h1>Bienvenido al mejor servicio de soporte en linea<span class="label label-warning">New</span></h1>
+</div>
+
+<!-- BARRA -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+</button>
+      <a class="navbar-brand" href="#">Bienvenido</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="{% url 'drivers' %}">Drivers</a></li>
+        <li><a href="{% url 'links' %}">Links</a></li>
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+         <li><a href=http://127.0.0.1:8000/accounts/login/ ><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'registro' %}"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        </ul>    
+</div>
+</div>
+
+ 
+<!-- CARRUSEL -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static "img/amdintel.jpg" %}" alt="AMD" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="{% static "img/rad.jpg" %}" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="{% static "img/amdrelease.jpg" %}" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</nav>
+<footer>
+  <p align="center">Posted by: Empresa MB</p>
+  <p align="center">Contact information: <a href="empresamb@gmail.com">
+  empresamb@gmail.com</a>.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+usuario mati
+password 123456
+
+cd proyecto
+cd mysite
+workon django_ambiente_virtual
+python manage.py runserver

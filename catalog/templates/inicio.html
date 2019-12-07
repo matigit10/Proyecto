@@ -1,0 +1,22 @@
+{% extends 'PrimerPag.html' %}
+{% block content %}
+{% include 'static/img/logomb.png' %}
+{% endblock %}
+
+{% block Carousel %}
+{% for Carousel in Carousel %}
+	<li data-target="#myCarousel" data-slide-to="{{Carousel.id}}" class="{{Carousel.btnUP}}"></li>
+{% endfor %}
+{% endblock %}
+
+{% block img %}
+{% for Carousel in Carousel %}
+	<div class="item{{Carousel.img}}">
+	<img src="{{Carousel.img.url}}" alt="{{Carousel.tittle}}"
+	<div class="Carousel-caption">
+	<h3>{{Carousel.tittle}}</h3>
+	<p></p>
+	</div>
+	</div>
+{% endfor %}
+{% endblock %}
